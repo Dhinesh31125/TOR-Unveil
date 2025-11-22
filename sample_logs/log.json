@@ -1,0 +1,4 @@
+[
+  { "timestamp": "2025-11-22T07:00:00Z", "ip": "185.0.0.2", "event": "incoming", "meta": "sample" },
+  { "timestamp": "2025-11-22T07:00:02Z", "ip": "203.0.113.5", "event": "outgoing", "meta": "sample" }
+]
