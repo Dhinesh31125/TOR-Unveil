@@ -33,17 +33,19 @@ Entry Node Prediction	Correlates candidate relays to traffic
 AS/Geo Risk Scoring ⭐	Assesses adversarial likelihood
 Visualization	Circuit mapping + Confidence scoring
 Forensic Support	Investigation‑ready insights
+
 💡 Unique Innovation
 AS/Geo‑Risk Scoring:
 Evaluates ASN and jurisdiction overlaps between relays to determine correlation risk and reinforce prediction confidence — a major step beyond standard timing‑based techniques.
 
-🛠 Tech Stack
+🛠 Tech Stack:
 Layer	Technology
 Frontend	React, Vite
 Backend	Node.js, Express
 Data Source	Onionoo API
 Visualization	Recharts / Graph elements
-⚙️ Current Status (Working Prototype)
+
+⚙️ Current Status (Working Prototype):
 ✔ TOR node fetch
 ✔ Log parser functional
 ✔ Entry node prediction
@@ -51,19 +53,8 @@ Visualization	Recharts / Graph elements
 ✔ Police dashboard UI
 ✔ Graph + risk badge visualization
 
-📌 Ready for hackathon demo & scalable upgrades.
-
-🔮 Future Enhancements
-Real ASN lookup (Team Cymru + GeoIP)
-
-Database‑based case history
-
-PDF forensic report generator
-
-Cloud deployment (National Cyber Security Grid)
-
 👥 Team
 Name	Role
-Dhinesh	Frontend & Integration
-Jagadesh	Documentation & Design
-(Add 3rd teammate)	Backend & Analytics
+Dhinesh B(Team Lead)   	Frontend & Integration
+Harish E(Member 1)      Backend & Analytics
+Jagadish KG(Member 2)	  Documentation & Design
