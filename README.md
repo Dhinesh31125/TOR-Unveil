@@ -130,6 +130,18 @@ strengthen prediction confidence — moving beyond traditional timing-only deano
 </ul>
 
 <hr>
+<h2>Protoype ScreenShot</h2>
+<img width="1920" height="1080" alt="Screenshot (37) 1" src="https://github.com/user-attachments/assets/f7b5401c-7721-4e45-8582-85c21cb2ca19" />
+
+<img width="1920" height="1080" alt="Screenshot (41) 1" src="https://github.com/user-attachments/assets/593e9218-480c-4b51-9d96-c6157c27685c" />
+<img width="1920" height="1080" alt="Screenshot (42) 1" src="https://github.com/user-attachments/assets/092eb879-9dc4-46fa-930c-90d45d415ab9" />
+<img width="1920" height="1080" alt="Screenshot (44) 1" src="https://github.com/user-attachments/assets/bf165d7e-9902-49bf-ad16-ce21c39ab9de" />
+<img width="1920" height="1080" alt="Screenshot (45) 1" src="https://github.com/user-attachments/assets/aa042861-6539-49f5-9216-1b93906557b7" />
+
+
+
+
+<hr>
 
 <h2>👥 Team</h2>
 <table style="width:100%; border-collapse: collapse;">
