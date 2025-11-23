@@ -24,42 +24,42 @@
 
 <h2>🔹 Data Flow</h2>
 <br>
-<img width="2520" height="1373" alt="Data_Flow drawio 1" src="https://github.com/user-attachments/assets/6c408486-2304-4dfc-8b4d-0f66ee1c09ac" />
+<div><img width="2520" height="1373" alt="Data_Flow drawio 1" src="https://github.com/user-attachments/assets/6c408486-2304-4dfc-8b4d-0f66ee1c09ac" /></div>
 <br>
 <p>Logs uploaded by the user are parsed and enriched with TOR node metadata before undergoing analytical computation. The backend transforms this into intelligence output that is visualized at the frontend and archived for forensic reporting.</p>
 
 <h2>🔹 Purpose: Explains how data moves and transforms within the system.</h2>
 
-<h2>🚔 Key Capabilities</h2>
-<p>Feature	Description
-TOR Node Collection	Live metadata from Onionoo directory
-Log Parsing	Extracts timing, IP and protocol evidence
-Entry Node Prediction	Correlates candidate relays to traffic
-AS/Geo Risk Scoring ⭐	Assesses adversarial likelihood
-Visualization	Circuit mapping + Confidence scoring
+<h2>🚔 Key Capabilities</h2><br>
+<p>Feature	Description<br>
+TOR Node Collection	Live metadata from Onionoo directory<br>
+Log Parsing	Extracts timing, IP and protocol evidence<br>
+Entry Node Prediction	Correlates candidate relays to traffic<br>
+AS/Geo Risk Scoring ⭐	Assesses adversarial likelihood<br>
+Visualization	Circuit mapping + Confidence scoring<br>
 Forensic Support	Investigation‑ready insights</p>
 
-<h2>💡 Unique Innovation
+<h2>💡 Unique Innovation :<br>
 AS/Geo‑Risk Scoring:<h2>
 <p>Evaluates ASN and jurisdiction overlaps between relays to determine correlation risk and reinforce prediction confidence — a major step beyond standard timing‑based techniques.</p>
 
 <h2>🛠 Tech Stack:</h2>
-<p>Layer	Technology
-Frontend	React, Vite
-Backend	Node.js, Express
-Data Source	Onionoo API
+<p>Layer	Technology<br>
+Frontend	React, Vite<br>
+Backend	Node.js, Express<br>
+Data Source	Onionoo API<br>
 Visualization	Recharts / Graph elements</p>
 
 <h2>⚙️ Current Status (Working Prototype):</h2>
-<p>✔ TOR node fetch
-✔ Log parser functional
-✔ Entry node prediction
-✔ Confidence scoring
-✔ Police dashboard UI
+<p>✔ TOR node fetch<br>
+✔ Log parser functional<br>
+✔ Entry node prediction<br>
+✔ Confidence scoring<br>
+✔ Police dashboard UI<br>
 ✔ Graph + risk badge visualization</p>
 
 <h2>👥 Team 
-Name	                  Role</h2>
-<p>Dhinesh B(Team Lead)   	Frontend & Integration
-Harish E(Member 1)      Backend & Analytics
+Name	                  Role</h2><br>
+<p>Dhinesh B(Team Lead)   	Frontend & Integration<br>
+Harish E(Member 1)      Backend & Analytics<br>
 Jagadish KG(Member 2)	  Documentation & Design</p>
