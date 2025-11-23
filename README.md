@@ -1,71 +1,158 @@
-<h1>📡 TOR‑Unveil — Deanonymization Support System</h1>
-<p>TOR‑Unveil is a law‑enforcement intelligence platform designed to help cybercrime units analyze suspected TOR traffic. It identifies possible TOR Guard/Entry nodes by correlating network logs with real‑time TOR relay data and applies AS/Geo‑Risk intelligence to produce actionable investigation insights.</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+<h1 align="center">📡 <span style="color:#4A90E2;">TOR-Unveil</span> — Deanonymization Support System</h1>
+<p align="center" style="font-size:17px;">
+A law-enforcement intelligence platform to analyze suspected TOR traffic using<br>
+<b>correlation modeling + risk scoring + real-time TOR relay intelligence.</b>
+</p>
+
+<hr>
 
 <h2>🏛 System Overview</h2>
-<p>The system uses a modular analytical approach where TOR data collection, log processing, correlation modelling, and risk scoring are integrated into a secure police dashboard for visualization and forensic reporting.</p>
+<p>
+TOR-Unveil helps cybercrime units identify potential TOR Guard/Entry nodes by cross-referencing 
+network logs with real-time TOR relay datasets. It uses AS/Geo-Risk intelligence and correlation 
+models to produce actionable insights inside a secure police investigation dashboard.
+</p>
 
-<h2>🔷 System Architecture </h2>
-<br>
-<div><img width="1725" height="1055" alt="Architecture drawio 1" src="https://github.com/user-attachments/assets/cd8755bd-abad-4154-99b4-bfca269a0e7e" /></div>
-<br>
-<p>The architecture consists of multiple core components including Onionoo API‑based TOR node fetcher, log/PCAP parser, correlation engine, Entry node predictor, confidence scoring, and AS/Geo‑Risk analyzer. These modules are connected through a Node.js backend that supplies processed intelligence to a React‑based police UI for case review and forensic documentation.</p>
+<hr>
 
-<p>🔹 Purpose: Shows how every module interacts end‑to‑end to form a complete operational workflow.</p>
-<br>
-<h1>🔶 Process Flow</h1>
-<br>
-<div><img width="1777" height="709" alt="Untitled_Diagram5 drawio 1" src="https://github.com/user-attachments/assets/97722c71-ce35-4981-87a1-bfcf68c9be48" /></div>
+<h2>🔷 System Architecture</h2>
+<div align="center">
+  <img width="85%" src="https://github.com/user-attachments/assets/cd8755bd-abad-4154-99b4-bfca269a0e7e" alt="Architecture Diagram">
+</div>
+<p>
+This architecture connects multiple analytical modules including:
+</p>
+<ul>
+  <li>Onionoo API TOR Node Fetcher</li>
+  <li>Log / PCAP Parser</li>
+  <li>Correlation Engine</li>
+  <li>Entry Node Predictor</li>
+  <li>Confidence Scoring Engine</li>
+  <li>AS/Geo-Risk Analyzer ⭐</li>
+  <li>React-based Police Dashboard</li>
+</ul>
 
-<br>
+<p><b>Purpose:</b> Shows the complete end-to-end operational workflow.</p>
 
+<hr>
 
-<p>The system begins with dataset preparation and node correlation, followed by entry node identification and risk evaluation. Predicted results are visually mapped and returned to the analyst for evidence review in cyber investigations.</p>
+<h2>🔶 Process Flow</h2>
+<div align="center">
+  <img width="85%" src="https://github.com/user-attachments/assets/97722c71-ce35-4981-87a1-bfcf68c9be48" alt="Process Flow">
+</div>
 
-<p>🔹 Purpose: Illustrates the logical sequence the system follows during analysis.</p>
+<p>
+The workflow begins with dataset preparation → node correlation → entry node prediction → 
+risk scoring → visualization of results for case analysis.
+</p>
+
+<p><b>Purpose:</b> Represents the logical order of system operations.</p>
+
+<hr>
 
 <h2>🔹 Data Flow</h2>
-<br>
-<div><img width="2520" height="1373" alt="Data_Flow drawio 1" src="https://github.com/user-attachments/assets/6c408486-2304-4dfc-8b4d-0f66ee1c09ac" /></div>
-<br>
-<p>Logs uploaded by the user are parsed and enriched with TOR node metadata before undergoing analytical computation. The backend transforms this into intelligence output that is visualized at the frontend and archived for forensic reporting.</p>
+<div align="center">
+  <img width="90%" src="https://github.com/user-attachments/assets/6c408486-2304-4dfc-8b4d-0f66ee1c09ac" alt="Data Flow Diagram">
+</div>
 
-<p>🔹 Purpose: Explains how data moves and transforms within the system.<p>
-
-<h2>🚔 Key Capabilities</h2><br>
-<h3>Feature	Description</h3><br>
-<p>TOR Node Collection	Live metadata from Onionoo directory<br>
-Log Parsing	Extracts timing, IP and protocol evidence<br>
-Entry Node Prediction	Correlates candidate relays to traffic<br>
-AS/Geo Risk Scoring ⭐	Assesses adversarial likelihood<br>
-Visualization	Circuit mapping + Confidence scoring<br>
-Forensic Support	Investigation‑ready insights</p>
-
-<h2>💡 Unique Innovation :<br>
-AS/Geo‑Risk Scoring:<h2>
-<p>Evaluates ASN and jurisdiction overlaps between relays to determine correlation risk and reinforce prediction confidence — a major step beyond standard timing‑based techniques.</p>
-
-<h2>🛠 Tech Stack:</h2>
 <p>
-  <li>Layer	Technology</li>
-<li>Frontend	React, Vite</li>
-<li>Backend	Node.js, Express</li>
-<li>Data Source	Onionoo API</li>
-<li>Visualization	Recharts / Graph elements</li></p>
+Logs uploaded by investigators are parsed and enriched with TOR metadata. The backend transforms 
+this into intelligence reports that are visualized in the frontend dashboard.
+</p>
 
-<h2>⚙️ Current Status (Working Prototype):</h2>
-<p>✔ TOR node fetch<br>
-  <ol>
-<li>✔ Log parser functional</li>
-<li>✔ Entry node prediction</li>
-<li>✔ Confidence scoring</li>
-<li>✔ Police dashboard UI</li>
-<li>✔ Graph + risk badge visualization</li>
-  </ol></p>
+<p><b>Purpose:</b> Demonstrates how data moves through the system.</p>
 
-<h2>👥 Team 
-Name	                  Role</h2><br>
-<p><ol>
-<li>Dhinesh B(Team Lead)   	Frontend & Integration</li>
-<li>Harish E(Member 1)      Backend & Analytics</li>
-<li>Jagadish KG(Member 2)	  Documentation & Design</li>
-</ol></p>
+<hr>
+
+<h2>🚔 Key Capabilities</h2>
+
+<table style="width:100%; border-collapse: collapse;">
+  <tr style="background:#f0f0f0;">
+    <th style="padding:10px; text-align:left;">Feature</th>
+    <th style="padding:10px; text-align:left;">Description</th>
+  </tr>
+  <tr>
+    <td style="padding:10px;">TOR Node Collection</td>
+    <td style="padding:10px;">Fetches real-time metadata from Onionoo directories</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Log Parsing</td>
+    <td style="padding:10px;">Extracts timing, IP, and protocol evidence</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Entry Node Prediction</td>
+    <td style="padding:10px;">Matches candidate relays using timing correlation</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">AS/Geo-Risk Scoring ⭐</td>
+    <td style="padding:10px;">Identifies ASN + jurisdictional overlaps</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Visualization</td>
+    <td style="padding:10px;">Circuit mapping + confidence metrics</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Forensic Support</td>
+    <td style="padding:10px;">Evidence-ready insights for cyber investigators</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>💡 Unique Innovation — AS/Geo-Risk Scoring</h2>
+<p>
+This system evaluates ASN similarity, hosting jurisdiction, and relay-risk characteristics to 
+strengthen prediction confidence — moving beyond traditional timing-only deanonymization approaches.
+</p>
+
+<hr>
+
+<h2>🛠 Tech Stack</h2>
+<ul>
+  <li><b>Frontend:</b> React, Vite</li>
+  <li><b>Backend:</b> Node.js, Express</li>
+  <li><b>Data Source:</b> Onionoo API</li>
+  <li><b>Visualization:</b> Recharts / Graph elements</li>
+</ul>
+
+<hr>
+
+<h2>⚙️ Current Status (Working Prototype)</h2>
+<ul>
+  <li>✔ TOR node fetch</li>
+  <li>✔ Log parser functional</li>
+  <li>✔ Entry node prediction</li>
+  <li>✔ Confidence scoring</li>
+  <li>✔ Police dashboard UI</li>
+  <li>✔ Graph + risk mapping visualization</li>
+</ul>
+
+<hr>
+
+<h2>👥 Team</h2>
+<table style="width:100%; border-collapse: collapse;">
+  <tr style="background:#f0f0f0;">
+    <th style="padding:10px; text-align:left;">Name</th>
+    <th style="padding:10px; text-align:left;">Role</th>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Dhinesh B (Team Lead)</td>
+    <td style="padding:10px;">Frontend & Integration</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Harish E (Member 1)</td>
+    <td style="padding:10px;">Backend & Analytics</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">Jagadish KG (Member 2)</td>
+    <td style="padding:10px;">Documentation & Design</td>
+  </tr>
+</table>
+
+<hr>
+
+<h3 align="center">🚀 TOR-Unveil — Enabling Smarter Cybercrime Investigations</h3>
+
+</div>
