@@ -4,8 +4,9 @@
 <h2>🏛 System Overview</h2>
 <p>The system uses a modular analytical approach where TOR data collection, log processing, correlation modelling, and risk scoring are integrated into a secure police dashboard for visualization and forensic reporting.</p>
 
-<h2>🔷 System Architecture </h2><br>
-<img width="1725" height="1055" alt="Architecture drawio 1" src="https://github.com/user-attachments/assets/cd8755bd-abad-4154-99b4-bfca269a0e7e" />
+<h2>🔷 System Architecture </h2>
+<br>
+<div><img width="1725" height="1055" alt="Architecture drawio 1" src="https://github.com/user-attachments/assets/cd8755bd-abad-4154-99b4-bfca269a0e7e" /></div>
 <br>
 <p>The architecture consists of multiple core components including Onionoo API‑based TOR node fetcher, log/PCAP parser, correlation engine, Entry node predictor, confidence scoring, and AS/Geo‑Risk analyzer. These modules are connected through a Node.js backend that supplies processed intelligence to a React‑based police UI for case review and forensic documentation.</p>
 
@@ -13,7 +14,7 @@
 <br>
 <h1>🔶 Process Flow</h1>
 <br>
-<img width="1777" height="709" alt="Untitled_Diagram5 drawio 1" src="https://github.com/user-attachments/assets/97722c71-ce35-4981-87a1-bfcf68c9be48" />
+<div><img width="1777" height="709" alt="Untitled_Diagram5 drawio 1" src="https://github.com/user-attachments/assets/97722c71-ce35-4981-87a1-bfcf68c9be48" /></div>
 
 <br>
 
@@ -28,11 +29,11 @@
 <br>
 <p>Logs uploaded by the user are parsed and enriched with TOR node metadata before undergoing analytical computation. The backend transforms this into intelligence output that is visualized at the frontend and archived for forensic reporting.</p>
 
-<h2>🔹 Purpose: Explains how data moves and transforms within the system.</h2>
+<p>🔹 Purpose: Explains how data moves and transforms within the system.<p>
 
 <h2>🚔 Key Capabilities</h2><br>
-<p>Feature	Description<br>
-TOR Node Collection	Live metadata from Onionoo directory<br>
+<h3>Feature	Description</h3><br>
+<p>TOR Node Collection	Live metadata from Onionoo directory<br>
 Log Parsing	Extracts timing, IP and protocol evidence<br>
 Entry Node Prediction	Correlates candidate relays to traffic<br>
 AS/Geo Risk Scoring ⭐	Assesses adversarial likelihood<br>
@@ -44,22 +45,27 @@ AS/Geo‑Risk Scoring:<h2>
 <p>Evaluates ASN and jurisdiction overlaps between relays to determine correlation risk and reinforce prediction confidence — a major step beyond standard timing‑based techniques.</p>
 
 <h2>🛠 Tech Stack:</h2>
-<p>Layer	Technology<br>
-Frontend	React, Vite<br>
-Backend	Node.js, Express<br>
-Data Source	Onionoo API<br>
-Visualization	Recharts / Graph elements</p>
+<p>
+  <li>Layer	Technology</li>
+<li>Frontend	React, Vite</li>
+<li>Backend	Node.js, Express</li>
+<li>Data Source	Onionoo API</li>
+<li>Visualization	Recharts / Graph elements</li></p>
 
 <h2>⚙️ Current Status (Working Prototype):</h2>
 <p>✔ TOR node fetch<br>
-✔ Log parser functional<br>
-✔ Entry node prediction<br>
-✔ Confidence scoring<br>
-✔ Police dashboard UI<br>
-✔ Graph + risk badge visualization</p>
+  <ol>
+<li>✔ Log parser functional</li>
+<li>✔ Entry node prediction</li>
+<li>✔ Confidence scoring</li>
+<li>✔ Police dashboard UI</li>
+<li>✔ Graph + risk badge visualization</li>
+  </ol></p>
 
 <h2>👥 Team 
 Name	                  Role</h2><br>
-<p>Dhinesh B(Team Lead)   	Frontend & Integration<br>
-Harish E(Member 1)      Backend & Analytics<br>
-Jagadish KG(Member 2)	  Documentation & Design</p>
+<p><ol>
+<li>Dhinesh B(Team Lead)   	Frontend & Integration</li>
+<li>Harish E(Member 1)      Backend & Analytics</li>
+<li>Jagadish KG(Member 2)	  Documentation & Design</li>
+</ol></p>
